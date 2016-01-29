@@ -66,6 +66,10 @@ angular.module('meetingsBaselineApp')
         templateUrl: 'views/chat.html',
         controller: 'ChatCtrl'
       })
+      .when('/hotel', {
+        templateUrl: 'views/hotel.html',
+        controller: 'HotelCtrl'
+      })
       .when('/login', {
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
