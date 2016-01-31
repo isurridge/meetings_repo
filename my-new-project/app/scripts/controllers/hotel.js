@@ -15,10 +15,11 @@ angular.module('meetingsBaselineApp')
     $scope.messages.$loaded().catch(alert);
 
     // provide a method for adding a message
-    $scope.addMessage = function(newMessage) {
+    $scope.addMessage = function(newMessage,hotel, description) {
       if( newMessage ) {
         // push a message to the end of the array
-        $scope.messages.$add({text: newMessage})
+        $scope.messages.$add({text: newMessage, hotelName: hotel, description: description})
+
           // display any errors
           .catch(alert);
       }
